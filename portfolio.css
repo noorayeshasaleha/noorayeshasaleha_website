@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-nav {
+	display: flex;
+    justify-content: center;
+	padding-top: 0;
+	background: white;
+	width: 100%;
+	max-width: 1280px;
+	height: 1280px;
+	
+	margin-top: -1180px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+    box-shadow:rgba(0,0,0,0.2) 0px 5px 30px, inset rgba(0,0,0,0) 0px -10px 20px;
+}
+
+.logo {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 1200px;
+}
+
+.one-box {
+    display: flex;
+	height:250px;
+	width: 100vw;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.two-box {
+	display: flex;
+	/*padding-top: 40px;*/
+	height:545px;
+	width: 100vw;
+    box-shadow:rgba(0,0,0,0.2) 0px -30px 50px, inset rgba(0,0,0,0) 0px -50px 50px;
+}

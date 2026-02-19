@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Rose:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (max-width: 768px){
+	.one-box{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.image{
+		justify-content: center;
+		margin-top: 30px;
+	}
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin:0px;
+}
+
+
+.one-box {
+    display: flex;
+    /*{margin-right: 0px;
+    padding-right: 0px;}*/
+	height:84vh;
+	min-height: 84vh;
+	width: 100%;
+
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 80px;
+	/*padding: 80px 0px 0px 300px;*/
+	/*margin-left: 0px;
+	padding-left: 0px;*/
+	
+	
+	
+	/*padding: 80px 100px;*/
+	
+	    /*-webkit-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;*/
+}
+
+.two-box {
+	display: flex;
+	padding-top: 40px;
+	height:545px;
+	width: 100%;
+    box-shadow:rgba(0,0,0,0.2) 0px -30px 50px, inset rgba(0,0,0,0) 0px -50px 50px;
+}
+
+.three-box {
+	display: flex;
+	height:520px;
+	width: 100%;
+    box-shadow:rgba(0,0,0,0.2) 0px 100px 50px, inset rgba(0,0,0,0.2) 0px 30px 50px;
+}
+
+.logo {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 1200px;
+}
+.main-nav {
+	display: flex;
+    justify-content: center;
+	padding-top: 0;
+	background: white;
+	width: 100%;
+	max-width: 1280px;
+	height: 1280px;
+	
+	margin-top: -1180px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+    box-shadow:rgba(0,0,0,0.2) 0px 5px 30px, inset rgba(0,0,0,0) 0px -10px 20px;
+}
+.text-area {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-width: 0;
+}
+
+.image {
+	/*flex: 0.8;*/
+	display: flex;
+	justify-content: flex-end;
+}
+
+.imo{
+	flex: 1;
+}
+
+.image > img {
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	align-content: right;
+	/*max-width: 900px;*/
+
+	max-width: 80%;
+	position: relative;
+	bottom:-15px;
+
+	
+	/*position: relative;*/
+	/*top: 100px;*/
+	/*height: auto;*/
+
+
+	/*{margin-top: -51px;
+	margin-right: -100px;
+	max-width: 95%;}*/
+
+
+	/*min-width: 50%;*/
+	
+    /*padding-left: 200px ;*/
+	/*height: auto;*/
+	/*width: 780px;
+	height: 520px;*/
+	/*margin-left: 760px;
+	margin-right: 20px;*/
+	}
+
+h1 {
+/*	display: flex;
+	justify-content: flex-start;*/
+	/*position: relative;
+	bottom:50px;*/
+	font-family: 'Playfair Display' ,system-ui, serif;
+	font-size: 60px;
+	/*padding-top: -60px;*/
+	padding-left: 30px;
+	margin-bottom: 100px;
+	font-weight: 200;
+
+	/*text-align: left;*/
+	/*align-items: left;
+	justify-content: left;*/
+	/*margin-top: -250px;*/
+
+
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 25px;
+
+    transition: all 0.2s linear;
+
+	height: 30px;
+	width: 150px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 4px;
+	/*{position: absolute;*/
+		position: relative;
+		bottom: 100px;
+	/*bottom: -100px;
+	left: -959px;*/
+/*}*/
+    box-shadow:rgba(0,0,0,0.5) 5px 5px 20px, rgba(0,0,0,0) 50px -10px 20px;
+}
+
+.front {
+	font-family: 'Urbanist' ,system-ui, sans-serif;
+	font-size: 25px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	height: 53px;
+	width: 334px;
+	background-color:#1A1A1A ;
+	color: white;
+	border-radius: 4px;
+	position: relative;
+		bottom: 51px;
+		left: 140px;
+}
+.btn{
+	margin-top: 20px;
+	margin-left:32px ;
+
+}
+button:hover{
+	transform: scale(1.1);
+	background-color: #333;
+	    
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.experience {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Playfair Display' ,system-ui, serif;
+	font-size: 50px;
+	font-weight: 500;
+	
+	
+	
+	margin-left: 400px;
+	margin-top: 40px;
+
+
+}
+.languages {
+	font-family: 'Urbanist' ,system-ui, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+    margin-top: 150px;
+    margin-left: -650px;
+    line-height: 55px;
+    text-align: right;
+
+}
+
+
+.html {
+	display: flex;
+	margin-top: -250px;
+	margin-left: -540px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;
+
+
+}
+
+.css {
+	display: flex;
+	margin-top: 40px;
+	margin-left: -539px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;
+
+}
+.java {
+display: flex;
+	margin-top: 42px;
+	margin-left: -539px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;
+}
+.ui {
+	display: flex;
+	margin-top: 43px;
+	margin-left: -540px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;
+}.ux {
+display: flex;
+	margin-top: 43px;
+	margin-left: -540px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;
+}
+
+.htmlo {
+	display: flex;
+	margin-top: -235px;
+	margin-left: -540px;
+	height: 13px;
+	width: 300px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 1.0) ;
+
+
+}
+
+.csst {
+	display: flex;
+	margin-top: 40px;
+	margin-left: -539px;
+	height: 13px;
+	width: 300px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 1.0) ;
+
+}
+.javath {
+display: flex;
+	margin-top: 43px;
+	margin-left: -540px;
+	height: 13px;
+	width: 100px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 1.0) ;
+}
+.uif {
+	display: flex;
+	margin-top: 43px;
+	margin-left: -540px;
+	height: 13px;
+	width: 200px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 1.0) ;
+}.uxfi {
+display: flex;
+	margin-top: 43px;
+	margin-left: -540px;
+	height: 13px;
+	width: 200px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 1.0) ;
+}
+
+.ten {
+	font-family: 'Urbanist' ,system-ui, sans-serif;
+	font-size: 130px;
+	font-weight: 900;
+	display: flex;
+	margin-top: 200px;
+	margin-left: -100px;
+
+}
+
+.pro {
+	font-family: 'Urbanist' ,system-ui, sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+	margin-left: -82px;
+	margin-top: -30px;
+	letter-spacing: 6px;
+}
+
+.latest {
+	font-family: 'Playfair Display' ,system-ui, serif;
+	font-size: 50px;
+	font-weight: 500;
+	display: flex;
+	padding-top: 80px;
+	justify-content: center;
+	margin-left: 500px;
+}
