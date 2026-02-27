@@ -7,11 +7,11 @@
 	.one-box{
 		flex-direction: column;
 		text-align: center;
+		padding: 40px 20px;
 	}
 
-	.image{
-		justify-content: center;
-		margin-top: 30px;
+	.text-area h1 {
+		font-size: 40px;
 	}
 }
 
@@ -31,29 +31,85 @@ body {
 
 .one-box {
     display: flex;
-    /*{margin-right: 0px;
-    padding-right: 0px;}*/
-	height:84vh;
-	min-height: 84vh;
-	width: 100%;
-
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 80px;
-	/*padding: 80px 0px 0px 300px;*/
-	/*margin-left: 0px;
-	padding-left: 0px;*/
-	
-	
-	
-	/*padding: 80px 100px;*/
-	
-	    /*-webkit-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.3) 0px 3px 3px, inset rgba(0,0,0,0) 0px -10px 20px;*/
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    min-height: 100vh;
+    gap: 40px;
 }
 
+.text-area {
+	flex: 1;
+
+}
+
+.text-area h1 {
+	font-family: 'Playfair Display' ,system-ui, serif;
+	font-size: 60px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	
+}
+
+
+.btn {
+	margin-top: 20px;
+
+}
+
+
+.work {
+	border: none;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s ease;
+  
+	
+    box-shadow:rgba(0,0,0,0.5) 5px 5px 20px, rgba(0,0,0,0) 50px -10px 20px;*/
+}
+
+.work:hover{
+	transform: scale(1.05);
+	background-color: #333;
+	    
+    
+}
+
+
+.imo {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	
+}
+
+.image img {
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+	display: block;
+	margin-top: -60px;
+}
+
+.front {
+	border-radius: 4px;
+	color: white;
+	background-color:#1A1A1A ;
+	padding: 12px;
+	margin-top: -55px;
+	margin-right: -0pxs;
+	font-family: 'Urbanist', sans-serif;
+	font-size: 25px;
+	width: 100%;
+	max-width: 450px;
+	text-align: center;
+	
+}
 .two-box {
 	display: flex;
 	padding-top: 40px;
@@ -92,126 +148,7 @@ body {
 	border-bottom-left-radius: 100%;
     box-shadow:rgba(0,0,0,0.2) 0px 5px 30px, inset rgba(0,0,0,0) 0px -10px 20px;
 }
-.text-area {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	min-width: 0;
-}
 
-.image {
-	/*flex: 0.8;*/
-	display: flex;
-	justify-content: flex-end;
-}
-
-.imo{
-	flex: 1;
-}
-
-.image > img {
-	display: flex;
-	justify-content: right;
-	align-items: right;
-	align-content: right;
-	/*max-width: 900px;*/
-
-	max-width: 80%;
-	position: relative;
-	bottom:-15px;
-
-	
-	/*position: relative;*/
-	/*top: 100px;*/
-	/*height: auto;*/
-
-
-	/*{margin-top: -51px;
-	margin-right: -100px;
-	max-width: 95%;}*/
-
-
-	/*min-width: 50%;*/
-	
-    /*padding-left: 200px ;*/
-	/*height: auto;*/
-	/*width: 780px;
-	height: 520px;*/
-	/*margin-left: 760px;
-	margin-right: 20px;*/
-	}
-
-h1 {
-/*	display: flex;
-	justify-content: flex-start;*/
-	/*position: relative;
-	bottom:50px;*/
-	font-family: 'Playfair Display' ,system-ui, serif;
-	font-size: 60px;
-	/*padding-top: -60px;*/
-	padding-left: 30px;
-	margin-bottom: 100px;
-	font-weight: 200;
-
-	/*text-align: left;*/
-	/*align-items: left;
-	justify-content: left;*/
-	/*margin-top: -250px;*/
-
-
-}
-
-.work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	margin-top: 25px;
-
-    transition: all 0.2s linear;
-
-	height: 30px;
-	width: 150px;
-	background-color: black;
-	color: white;
-	cursor: pointer;
-	border: 1px solid black;
-	border-radius: 4px;
-	/*{position: absolute;*/
-		position: relative;
-		bottom: 100px;
-	/*bottom: -100px;
-	left: -959px;*/
-/*}*/
-    box-shadow:rgba(0,0,0,0.5) 5px 5px 20px, rgba(0,0,0,0) 50px -10px 20px;
-}
-
-.front {
-	font-family: 'Urbanist' ,system-ui, sans-serif;
-	font-size: 25px;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	margin-top: 20px;
-	height: 53px;
-	width: 334px;
-	background-color:#1A1A1A ;
-	color: white;
-	border-radius: 4px;
-	position: relative;
-		bottom: 51px;
-		left: 140px;
-}
-.btn{
-	margin-top: 20px;
-	margin-left:32px ;
-
-}
-button:hover{
-	transform: scale(1.1);
-	background-color: #333;
-	    
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
 
 .experience {
 	display: flex;
@@ -366,4 +303,5 @@ display: flex;
 	padding-top: 80px;
 	justify-content: center;
 	margin-left: 500px;
+
 }
