@@ -28,7 +28,29 @@ body {
 	margin:0px;
 }
 
-
+.logo {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 1200px;
+}
+.main-nav {
+	display: flex;
+    justify-content: center;
+	padding-top: 0;
+	background: white;
+	width: 100%;
+	max-width: 1280px;
+	height: 1280px;
+	
+	margin-top: -1180px;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+    box-shadow:rgba(0,0,0,0.2) 0px 5px 30px, inset rgba(0,0,0,0) 0px -10px 20px;
+}
 .one-box {
     display: flex;
     align-items: center;
@@ -44,7 +66,7 @@ body {
 }
 
 .text-area h1 {
-	font-family: 'Playfair Display' ,system-ui, serif;
+	font-family: 'Playfair Display',system-ui, serif;
 	font-size: 60px;
 	font-weight: 300;
 	margin-bottom: 40px;
@@ -110,13 +132,134 @@ body {
 	text-align: center;
 	
 }
+
+@media (max-width: 768px){
+	.two-box{
+		flex-direction: column;
+		text-align: center;
+	}
+	.section-title {
+		font-size: 36px;
+	}
+	.number{
+		font-size: 70px;
+	}
+	.two-content{
+		flex-direction: column;
+		text-align: center;
+
+	}
+}
+
 .two-box {
 	display: flex;
-	padding-top: 40px;
-	height:545px;
-	width: 100%;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	align-items: center;
+	padding: 80px;
+	gap: 60px;
+	min-height:600px;
+	/*width: 100%;*/
     box-shadow:rgba(0,0,0,0.2) 0px -30px 50px, inset rgba(0,0,0,0) 0px -50px 50px;
 }
+
+.section-title {
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	font-weight: 500;
+	text-align: center;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 400px;
+	margin-top: 40px;*/
+}
+
+.two-content{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 80px;
+}
+
+.bars-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	/*margin-top: -250px;
+	margin-left: -540px;
+	height: 13px;
+	width: 350px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.2) ;*/
+}
+
+.skill span {
+	font-family: 'Urbanist' ,system-ui, sans-serif;
+	font-weight: bold;
+	/*font-size: 20px;
+	
+	display: flex;
+    margin-top: 150px;
+    margin-left: -650px;
+    line-height: 55px;
+    text-align: right;
+*/
+}
+
+
+
+
+.bar {
+	height: 12px;
+	background-color:rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	margin-top: 8px;
+	overflow: hidden;
+	/*display: flex;
+	
+	margin-left: -539px;
+	
+	width: 350px;*/
+}
+.progress {
+	height: 100%;
+	background-color: black;
+	border-radius: 10px;
+/*display: flex;
+	margin-top: 42px;
+	margin-left: -539px;
+	height: 13px;
+	width: 350px;
+	
+	background-color:rgba(0, 0, 0, 0.2) ;*/
+}
+.projects-column {
+	text-align: center;
+	
+}
+
+.number {
+	font-family: 'Urbanist',system-ui, sans-serif;
+	font-size: 130px;
+	font-weight: 900;
+	/*display: flex;
+	margin-top: 200px;
+	margin-left: -100px;*/
+}
+
+.label {
+	font-family: 'Urbanist',system-ui, sans-serif;
+	font-size: 28px;
+	letter-spacing: 6px;
+	/*font-weight: 800;
+	margin-left: -82px;
+	margin-top: -30px;*/
+	
+}
+
 
 .three-box {
 	display: flex;
@@ -125,183 +268,8 @@ body {
     box-shadow:rgba(0,0,0,0.2) 0px 100px 50px, inset rgba(0,0,0,0.2) 0px 30px 50px;
 }
 
-.logo {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	padding: 20px;
-	padding-top: 1200px;
-}
-.main-nav {
-	display: flex;
-    justify-content: center;
-	padding-top: 0;
-	background: white;
-	width: 100%;
-	max-width: 1280px;
-	height: 1280px;
-	
-	margin-top: -1180px;
-	border-top-right-radius: 100%;
-	border-top-left-radius: 100%;
-	border-bottom-right-radius: 100%;
-	border-bottom-left-radius: 100%;
-    box-shadow:rgba(0,0,0,0.2) 0px 5px 30px, inset rgba(0,0,0,0) 0px -10px 20px;
-}
 
 
-.experience {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Playfair Display' ,system-ui, serif;
-	font-size: 50px;
-	font-weight: 500;
-	
-	
-	
-	margin-left: 400px;
-	margin-top: 40px;
 
 
-}
-.languages {
-	font-family: 'Urbanist' ,system-ui, sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	display: flex;
-    margin-top: 150px;
-    margin-left: -650px;
-    line-height: 55px;
-    text-align: right;
 
-}
-
-
-.html {
-	display: flex;
-	margin-top: -250px;
-	margin-left: -540px;
-	height: 13px;
-	width: 350px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 0.2) ;
-
-
-}
-
-.css {
-	display: flex;
-	margin-top: 40px;
-	margin-left: -539px;
-	height: 13px;
-	width: 350px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 0.2) ;
-
-}
-.java {
-display: flex;
-	margin-top: 42px;
-	margin-left: -539px;
-	height: 13px;
-	width: 350px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 0.2) ;
-}
-.ui {
-	display: flex;
-	margin-top: 43px;
-	margin-left: -540px;
-	height: 13px;
-	width: 350px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 0.2) ;
-}.ux {
-display: flex;
-	margin-top: 43px;
-	margin-left: -540px;
-	height: 13px;
-	width: 350px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 0.2) ;
-}
-
-.htmlo {
-	display: flex;
-	margin-top: -235px;
-	margin-left: -540px;
-	height: 13px;
-	width: 300px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 1.0) ;
-
-
-}
-
-.csst {
-	display: flex;
-	margin-top: 40px;
-	margin-left: -539px;
-	height: 13px;
-	width: 300px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 1.0) ;
-
-}
-.javath {
-display: flex;
-	margin-top: 43px;
-	margin-left: -540px;
-	height: 13px;
-	width: 100px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 1.0) ;
-}
-.uif {
-	display: flex;
-	margin-top: 43px;
-	margin-left: -540px;
-	height: 13px;
-	width: 200px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 1.0) ;
-}.uxfi {
-display: flex;
-	margin-top: 43px;
-	margin-left: -540px;
-	height: 13px;
-	width: 200px;
-	border-radius: 10px;
-	background-color:rgba(0, 0, 0, 1.0) ;
-}
-
-.ten {
-	font-family: 'Urbanist' ,system-ui, sans-serif;
-	font-size: 130px;
-	font-weight: 900;
-	display: flex;
-	margin-top: 200px;
-	margin-left: -100px;
-
-}
-
-.pro {
-	font-family: 'Urbanist' ,system-ui, sans-serif;
-	font-size: 28px;
-	font-weight: 800;
-	margin-left: -82px;
-	margin-top: -30px;
-	letter-spacing: 6px;
-}
-
-.latest {
-	font-family: 'Playfair Display' ,system-ui, serif;
-	font-size: 50px;
-	font-weight: 500;
-	display: flex;
-	padding-top: 80px;
-	justify-content: center;
-	margin-left: 500px;
-
-}
